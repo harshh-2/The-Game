@@ -1,6 +1,44 @@
 body{
     background-color: #cfff04;
 }
+*{
+     margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.logo{
+    margin:1px;
+    height:40px ;
+    width:60px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  border:2px solid black;
+  color: #cfff04;
+  background-color: black;
+  margin:12px;
+}
+.navbar a i{
+    margin: 2px;
+}
+.navbar a{
+    margin: 12px;
+    justify-content: space-evenly;
+    text-decoration:none;
+    color:#cfff04;
+    margin-right: 7px;
+    
+}
+.ref{
+    display: flex;
+    justify-content: space-evenly; 
+}
+.head{
+    text-align: center;
+    flex:1;
+    margin: 15px;
+}
 .title{
     text-align: center;
     font-size: 80px;
