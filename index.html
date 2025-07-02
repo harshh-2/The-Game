@@ -7,19 +7,22 @@
     <title>RPS</title>
 </head>
 <body>
-<div class="title"><big>Rock Paper Scissors</big></div>
-<div class="Mode">
-<b>You [A] wanna compete against?</b><br><br>
-<button class="mode" type="button" id="comp">Computer [B]</button>
-<button class="mode" type="button" id="hum">Human [B]</button></div><br>
-<div class="options"><b>Choose Your Option: [First to 5 point wins]</b><br><br>
-    <div class="stony">
-    <button type="button" id="rock"><div class="box">👊</div></button>
-       <button type="button" id="paper"><div class="box">✌️</div></button> 
-       <button type="button" id="scissors"> <div class="box">✋</div></button></div></div>
+<div class="title"><big>Rock Paper Scissors</big>
+<br><p>You [A] will compete against Computer[B]</p></div>
 <div class="Score"><br>
-    <div id="result"><b>Current Score</b><br></div>
-    <div class="counter">  <div style="border:2px solid black;width:15rem; background-color: darkolivegreen;">A SCORE:<br>0</div>
-    <div style="border:2px solid black;width:15rem;background-color:darkolivegreen;">B SCORE:<br>0</div></div></div>
+<div id="result"><b>Current Score</b><br></div>
+<div class="counter">  <div style="border:2px solid black;width:15rem; background-color: #007200;">A SCORE:<br>0</div>
+<div style="border:2px solid black;width:15rem;background-color:#9ef01a;">B SCORE:<br>0</div></div></div>
+<div class="options"><b>Choose Your Option: [First to 5 point wins]</b><br><br>
+<div class="stony">
+<button type="button" id="rock"><div class="box">👊</div></button>
+<button type="button" id="paper"><div class="box">✌️</div></button> 
+<button type="button" id="scissors"> <div class="box">✋</div></button>
+</div><br>
+<div id="popup" class="pop">
+    <b>final Message</b><br>
+    <small>click here to close</small>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
