@@ -48,7 +48,7 @@ body{
 .pop{
     display: none;
     box-shadow: 0 0 15px rgba(39, 2, 77, 1);
-    background-color: darkkhaki;
+    background-color: #cdb4db;
     color: black;
     position: fixed;
     top:50%;
