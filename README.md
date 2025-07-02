@@ -1,24 +1,62 @@
+#Rock Paper Scissors Game
+A simple and interactive Rock-Paper-Scissors game where a human player competes against the computer. The first to reach 5 points wins the game.
 
-// Final popup element (create it dynamically or ensure it's in your HTML)
-let finalPopup = document.createElement("div");
-finalPopup.id = "final-popup";
-finalPopup.style.cssText =
-  "display:none; position:fixed; top:40%; left:50%; transform:translate(-50%, -50%);" +
-  "background-color:#222; color:#fff; padding:30px 40px; border-radius:12px;" +
-  "font-size:28px; font-weight:bold; z-index:2000; box-shadow:0 0 20px rgba(0,0,0,0.8);" +
-  "text-align:center; max-width:90vw; cursor:pointer;";
-document.body.appendChild(finalPopup);
+Features
+Classic Rock-Paper-Scissors gameplay.
 
-function showFinalPopup(message) {
-  finalPopup.innerHTML = `${message}<br><small style="font-size:16px; margin-top:10px; display:block; cursor:pointer;">Click to close</small>`;
-  finalPopup.style.display = "block";
+Real-time score tracking.
 
-  finalPopup.onclick = () => {
-    finalPopup.style.display = "none";
-    resetGame();
-  };
-}
+Game ends when either player or computer reaches 5 points.
 
+Popup message to announce the game winner.
 
+Responsive and user-friendly UI.
+
+Simple animations and clear feedback after each round.
+
+Demo
+(https://harshh-2.github.io/The-Game/)
+
+How to Play
+Click on one of the options: Rock (👊), Paper (✌️), or Scissors (✋).
+
+The computer will randomly pick its choice.
+
+Scores update based on the rules:
+
+Rock beats Scissors.
+
+Paper beats Rock.
+
+Scissors beats Paper.
+
+The first to reach 5 points wins.
+
+A popup will display the final result. Click on the popup to reset the game.
+
+Enjoy playing!
+
+Technologies Used
+HTML5 - Structure and content.
+
+CSS3 - Styling and layout.
+
+JavaScript (ES6) - Game logic and interactivity.
+
+File Structure
+bash
+Copy
+Edit
+/project-root
+│
+├── index.html       # Main HTML file
+├── style.css        # CSS styling
+└── script.js        # JavaScript game logic
+
+Author
+Harsh Dubey
+
+License
+This project is open source and free to use.
 
 
