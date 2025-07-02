@@ -39,21 +39,18 @@ updatescore();
 }
 
 function updatescore(){
-sc[0].innerHTML=`A SCORE:<br>${humans}`;
-sc[1].innerHTML=`B SCORE:<br>${bots}`;
+sc[0].innerHTML=`<br>A SCORE:<br><br><br>${humans}`;
+sc[2].innerHTML=`B SCORE:<br><br><br>${bots}`;
 }
 
 function updateresult(result){
-    res.innerHTML=`<b>This Round</b><br>${result}</br>`;
-    res.style.fontSize='24px';
-    setTimeout(()=>{
-        res.innerHTML=`<b>Current score</b><br></br>`;
-    },900);
+    sc[1].innerHTML=`<br>This Round:<br><br>${result}`;
+    
 }
 
 function end(){
-    if(humans==5||bots==5){
-        let finalmsg= (humans==5)?"Yay you won the game!":"Damn lost to a bot" ;
+    if(humans==3||bots==3){
+        let finalmsg= (humans==3)?"Yay you won the game!":"Damn lost to a bot" ;
         popup(finalmsg);
     }
 }
